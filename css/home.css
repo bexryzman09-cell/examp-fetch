@@ -1,0 +1,252 @@
+.box {
+    display: flex;
+    padding: 40px 60px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    justify-content: space-between;
+}
+
+.title {
+    color: #f14141;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    letter-spacing:2px;
+font-size: 20px;
+}
+
+.info {
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 35px;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.name,
+.year,
+.price,
+.cpu,
+.disk,
+.add-btn {
+    width: 440px;
+    padding: 13px 15px;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background: #191919;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.name:focus,
+.year:focus,
+.price:focus,
+.cpu:focus,
+.disk:focus,
+.add-btn:focus {
+    border-color: #ff3030;
+    background: #202020;
+}
+
+
+.add-btn {
+    background: #e52525;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #ff3838;
+    transform: translateY(-1px);
+}
+
+
+
+
+
+
+
+
+.modal-form input {
+    background: #1a0505;
+    color: white;
+    border: 1px solid #5c1111;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+.modal-form input:focus {
+    border-color: #e60000;
+}
+
+
+.modal-form input::placeholder {
+    color: #8a6a6a;
+}
+
+
+
+
+
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background: #202020;
+    border: 1px solid #5c1111;
+    border-radius: 14px;
+    padding: 20px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    border-color: #e60000;
+}
+
+.product-card p {
+    margin: 0;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+.product-year,
+.product-cpu,
+.product-disk {
+    font-size: 14px;
+    color: #d9b3b3;
+}
+
+
+.delete-btn,
+.edit-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 9px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn {
+    background: #8b0000;
+    margin-top: 8px;
+}
+
+.delete-btn:hover {
+    background: #e60000;
+}
+
+.edit-btn {
+    background: transparent;
+    border: 1px solid #8b0000;
+}
+
+.edit-btn:hover {
+    background: #8b0000;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #202020;
+    color: #f5dada;
+    border: 1px solid #8b0000;
+    border-radius: 16px;
+    padding: 25px;
+    width: 300px;
+}
+
+.modal-form h2 {
+    margin: 0 0 5px;
+    color: white;
+}
+
+.save-btn,
+.cancel-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.save-btn {
+    background: #b30000;
+}
+
+.save-btn:hover {
+    background: #e60000;
+}
+
+.cancel-btn {
+    background: #4a1a1a;
+}
+
+.cancel-btn:hover {
+    background: #6b2525;
+}

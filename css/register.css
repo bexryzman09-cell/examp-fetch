@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  min-height: 90Vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.form-registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 35px;
+  width: 380px;
+  background: #111;
+  border: 1px solid #ff3030;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.username,
+.email,
+.password,
+.btn-registration {
+  width: 320px;
+  padding: 13px 15px;
+  outline: none;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #191919;
+  color: white;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.username::placeholder,
+.email::placeholder,
+.password::placeholder {
+  color: #777;
+}
+
+.username:focus,
+.email:focus,
+.password:focus {
+  border-color: #ff3030;
+  background: #202020;
+}
+
+.btn-registration {
+  background: #e52525;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-registration:hover {
+  background: #ff3838;
+  transform: scale(1.04);
+}
+
+.title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 10px;
+
+}
